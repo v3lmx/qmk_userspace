@@ -1,0 +1,6 @@
+{
+    "keyboard_name": "fifi-next",
+    "usb": {
+        "pid": "0x0104"
+    }
+}

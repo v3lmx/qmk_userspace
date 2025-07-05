@@ -1,0 +1,127 @@
+{
+    "maintainer": "v3lmx",
+    "manufacturer": "v3lmx",
+    "url": "https://github.com/v3lmx/tbd",
+    "usb": {
+        "vid": "0x4653",
+        "suspend_wakeup_delay": 200,
+        "device_version": "4.1.0"
+    },
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "features": {
+        "bootmagic": true,
+        "extrakey": true,
+        "nkro": true,
+        "oled": false,
+        "rgblight": false,
+        "rgb_matrix": false,
+        "mousekey": true,
+        "encoder": false
+    },
+    "dynamic_keymap": {
+        "layer_count": 6
+    },
+    "matrix_pins": {
+        "direct": [
+            [
+                "GP21",
+                "GP25",
+                "GP26",
+                "GP28",
+                "GP29",
+                null
+            ],
+            [
+                "GP20",
+                "GP22",
+                "GP27",
+                "GP2",
+                "GP3",
+                "GP5"
+            ],
+            [
+                "GP19",
+                "GP23",
+                "GP1",
+                "GP0",
+                "GP4",
+                "GP8"
+            ],
+            [
+                null,
+                null,
+                "GP16",
+                "GP17",
+                "GP18",
+                null
+            ]
+        ]
+    },
+    "bootmagic": {
+        "enabled": true,
+        "matrix": [
+            0,
+            1
+        ]
+    },
+    "split": {
+        "enabled": true,
+        "bootmagic": {
+            "matrix": [
+                4,
+                1
+            ]
+        },
+        "matrix_pins": {
+            "right": {
+                "direct": [
+                    [
+                        "GP9",
+                        "GP8",
+                        "GP4",
+                        "GP3",
+                        "GP2",
+                        null
+                    ],
+                    [
+                        "GP10",
+                        "GP6",
+                        "GP1",
+                        "GP28",
+                        "GP27",
+                        "GP25"
+                    ],
+                    [
+                        "GP11",
+                        "GP5",
+                        "GP0",
+                        "GP29",
+                        "GP26",
+                        "GP21"
+                    ],
+                    [
+                        null,
+                        null,
+                        "GP16",
+                        "GP17",
+                        "GP18",
+                        null
+                    ]
+                ]
+            }
+        },
+        "serial": {
+            "driver": "vendor"
+        },
+        "transport": {
+            "sync": {
+                "matrix_state": true
+            },
+            "watchdog": true
+        }
+    },
+    "community_layouts": [
+        "split_3x5_3"
+    ]
+}
