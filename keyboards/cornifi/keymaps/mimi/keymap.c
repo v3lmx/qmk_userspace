@@ -1,4 +1,5 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
+// Copyright 2025 @v3lmx
+// SPDX-License-Identifier: GPL-3.0-or-later
 
 #include QMK_KEYBOARD_H
 
@@ -26,7 +27,7 @@ enum layer_names {
 #define U_CUT KC_CUT
 #define U_UND KC_UNDO
 
-// Tap Dance declarations
+// Tap Dance
 enum {
     TD_BOOT,
 };
