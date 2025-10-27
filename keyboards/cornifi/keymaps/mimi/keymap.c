@@ -77,15 +77,15 @@ KC_NO,          KC_ALGR,    KC_NO,      KC_NO,      KC_NO,                      
                             KC_NO,      KC_NO,      KC_NO,                              KC_ENT,         KC_BSPC,    KC_DEL
     ),
 
-    [_ACC] = LAYOUT_split_3x5_3_ex2( // MOUSE
+    [_ACC] = LAYOUT_split_3x5_3_ex2( // ACC
 TD(TD_BOOT),    KC_NO,      KC_NO,      KC_NO,      E_GRV,      KC_NO,          KC_NO,  U_RDO,          U_CIR,      U_GRV,      U_TRM,      U_UND,          \
-A_GRV,          A_CIR,      KC_LCTL,    KC_LSFT,    E_TRM,      KC_NO,          KC_NO,  E_GRV,          E_AIG,      KC_MS_D,    I_CIR,      O_CIR,        \
-KC_NO,          KC_ALGR,    KC_NO,      KC_NO,      E_CIR,                              E_CIR,          E_TRM,      KC_WH_D,    I_TRM,      O_TRM,        \
-                            KC_NO,      KC_NO,      KC_NO,                              KC_BTN2,        KC_BTN1,    KC_BTN3
+A_GRV,          A_CIR,      KC_LCTL,    KC_LSFT,    E_TRM,      KC_NO,          KC_NO,  XXXXXXX,        E_AIG,      E_GRV,      I_CIR,      O_CIR,        \
+KC_NO,          KC_ALGR,    KC_NO,      KC_NO,      E_CIR,                              E_CIR,          E_TRM,      XXXXXXX,    I_TRM,      O_TRM,        \
+                            KC_NO,      KC_NO,      KC_NO,                              MS_BTN2,        MS_BTN1,    MS_BTN3
     ),
 
     [_MEDIA] = LAYOUT_split_3x5_3_ex2( // MEDIA
-TD(TD_BOOT),    KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,          KC_NO,  RGB_TOG,        RGB_MOD,    RGB_HUI,    RGB_SAI,    RGB_VAI,        \
+TD(TD_BOOT),    KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,          KC_NO,  XXXXXXX,        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,        \
 KC_LGUI,        KC_LALT,    KC_LCTL,    KC_LSFT,    KC_NO,      KC_NO,          KC_NO,  KC_NO,          KC_MPRV,    KC_VOLD,    KC_VOLU,    KC_MNXT,        \
 KC_NO,          KC_ALGR,    KC_NO,      KC_NO,      KC_NO,                              OU_AUTO,        KC_NO,      KC_NO,      KC_NO,      KC_NO,          \
                             KC_NO,      KC_NO,      KC_NO,                              KC_MSTP,        KC_MPLY,    KC_MUTE
