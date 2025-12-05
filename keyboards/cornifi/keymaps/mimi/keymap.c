@@ -53,6 +53,7 @@ enum accent_keycodes {
     U_GRV,
     U_TRM,
     U_CIR,
+    C_CED,
 };
 
 // Tap Dance definitions
@@ -79,8 +80,8 @@ KC_NO,          KC_ALGR,    KC_NO,      KC_NO,      KC_NO,                      
 
     [_ACC] = LAYOUT_split_3x5_3_ex2( // ACC
 TD(TD_BOOT),    KC_NO,      KC_NO,      KC_NO,      E_GRV,      KC_NO,          KC_NO,  U_RDO,          U_CIR,      U_GRV,      U_TRM,      U_UND,          \
-A_GRV,          A_CIR,      KC_LCTL,    KC_LSFT,    E_TRM,      KC_NO,          KC_NO,  XXXXXXX,        E_AIG,      E_GRV,      I_CIR,      O_CIR,        \
-KC_NO,          KC_ALGR,    KC_NO,      KC_NO,      E_CIR,                              E_CIR,          E_TRM,      XXXXXXX,    I_TRM,      O_TRM,        \
+A_GRV,          A_CIR,      KC_LCTL,    KC_LSFT,    E_TRM,      KC_NO,          KC_NO,  XXXXXXX,        E_AIG,      E_GRV,      I_CIR,      O_CIR,          \
+KC_NO,          KC_ALGR,    C_CED,      KC_NO,      E_CIR,                              E_CIR,          E_TRM,      XXXXXXX,    I_TRM,      O_TRM,          \
                             KC_NO,      KC_NO,      KC_NO,                              MS_BTN2,        MS_BTN1,    MS_BTN3
     ),
 
