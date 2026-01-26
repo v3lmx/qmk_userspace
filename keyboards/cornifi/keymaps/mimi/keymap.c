@@ -81,7 +81,7 @@ KC_NO,          KC_ALGR,    KC_NO,      KC_NO,      KC_NO,                      
     [_ACC] = LAYOUT_split_3x5_3_ex2( // ACC
 TD(TD_BOOT),    KC_NO,      KC_NO,      KC_NO,      E_GRV,      KC_NO,          KC_NO,  U_RDO,          U_CIR,      U_GRV,      U_TRM,      U_UND,          \
 A_GRV,          A_CIR,      KC_LCTL,    KC_LSFT,    E_TRM,      KC_NO,          KC_NO,  XXXXXXX,        E_AIG,      E_GRV,      I_CIR,      O_CIR,          \
-KC_NO,          KC_ALGR,    C_CED,      KC_NO,      E_CIR,                              E_CIR,          E_TRM,      XXXXXXX,    I_TRM,      O_TRM,          \
+KC_NO,          KC_ALGR,    C_CED,      KC_NO,      E_CIR,                              XXXXXXX,        E_CIR,      E_TRM,      I_TRM,      O_TRM,          \
                             KC_NO,      KC_NO,      KC_NO,                              MS_BTN2,        MS_BTN1,    MS_BTN3
     ),
 
@@ -220,6 +220,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case U_CIR:
             if (record->event.pressed) {
                 SEND_STRING(SS_ALGR("6") "u");
+            }
+            return false;
+        // C
+        case C_CED:
+            if (record->event.pressed) {
+                SEND_STRING(SS_ALGR(","));
             }
             return false;
     }

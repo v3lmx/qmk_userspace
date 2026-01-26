@@ -53,6 +53,7 @@ enum accent_keycodes {
     U_GRV,
     U_TRM,
     U_CIR,
+    C_CED,
 };
 
 // Tap Dance definitions
@@ -219,6 +220,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case U_CIR:
             if (record->event.pressed) {
                 SEND_STRING(SS_ALGR("6") "u");
+            }
+            return false;
+        case C_CED:
+            if (record->event.pressed) {
+                SEND_STRING(SS_ALGR(","));
             }
             return false;
     }
